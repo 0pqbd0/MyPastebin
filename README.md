@@ -27,16 +27,16 @@ Pastebin — это веб-приложение, позволяющее поль
     "ConnectionStrings": {
     "PastebinDbContext": "User ID=YourUserId;Password=YourPassword;Host=localhost;Port=YourPort;Database=YourDbName;",
     "HangfireConnection": "User ID=YourUserId;Password=YourPassword;Host=localhost;Port=YourPort;Database=YourDbName;"
-  },
+    },
     ```
     
 3. Настройте ключи для объкектного хранилища S3 `appsettings.Development.json`:
-```json
+ ```json
  "AWS": {
   "BucketName": "YourBucketName",
   "AccessKey": "YourAccessKey",
   "SecretKey": "YourSecretKey"
-}
+ }
  ```
 
 4. Примените миграции для создания базы данных:
